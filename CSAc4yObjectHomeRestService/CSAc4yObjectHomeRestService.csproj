@@ -9,8 +9,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CSAc4yServiceLib" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CSLibAc4yObjectDBCap">
+      <HintPath>C:\Library\c#\CSLibAc4yObjectDBCap.dll</HintPath>
+    </Reference>
+    <Reference Include="CSLibAc4yObjectObjectService">
+      <HintPath>C:\Library\c#\CSLibAc4yObjectObjectService.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
