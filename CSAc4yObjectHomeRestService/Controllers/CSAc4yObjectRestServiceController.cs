@@ -18,11 +18,12 @@ namespace CSAc4yObjectHomeRestService.Controllers
         private string _ConnectionString;
         private SqlConnection _DBConn;
 
-        public CSAc4yObjectRestService(IOptions<MSSQLLogin> MSSQLLogin)
+        public CSAc4yObjectRestService(IOptions<MSSQLLogin> msSQLLogin)
         {
-            _MSSQLLogin = MSSQLLogin.Value;
+            _MSSQLLogin = msSQLLogin.Value;
             _ConnectionString = _MSSQLLogin.connectionString;
             _DBConn = new SqlConnection(_ConnectionString);
+            _DBConn.Open();
         }
 
         [HttpPost]

@@ -18,10 +18,10 @@
 
   <ItemGroup>
     <Reference Include="CSLibAc4yObjectDBCap">
-      <HintPath>C:\Library\c#\CSLibAc4yObjectDBCap.dll</HintPath>
+      <HintPath>..\..\CSLibAc4yObjectDBCap\CSLibAc4yObjectDBCap\bin\Release\netcoreapp2.2\CSLibAc4yObjectDBCap.dll</HintPath>
     </Reference>
     <Reference Include="CSLibAc4yObjectObjectService">
-      <HintPath>C:\Library\c#\CSLibAc4yObjectObjectService.dll</HintPath>
+      <HintPath>..\..\CSLibAc4yObjectObjectService\CSLibAc4yObjectObjectService\bin\Release\netcoreapp2.2\CSLibAc4yObjectObjectService.dll</HintPath>
     </Reference>
   </ItemGroup>
 
