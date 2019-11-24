@@ -10,19 +10,12 @@
 
   <ItemGroup>
     <PackageReference Include="CSAc4yServiceLib" Version="1.0.0" />
+    <PackageReference Include="CSLibAc4yObjectObjectService" Version="1.0.1" />
+    <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
     <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="CSLibAc4yObjectDBCap">
-      <HintPath>..\..\CSLibAc4yObjectDBCap\CSLibAc4yObjectDBCap\bin\Release\netcoreapp2.2\CSLibAc4yObjectDBCap.dll</HintPath>
-    </Reference>
-    <Reference Include="CSLibAc4yObjectObjectService">
-      <HintPath>..\..\CSLibAc4yObjectObjectService\CSLibAc4yObjectObjectService\bin\Release\netcoreapp2.2\CSLibAc4yObjectObjectService.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
