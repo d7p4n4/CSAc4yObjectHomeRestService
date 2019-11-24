@@ -27,11 +27,18 @@ namespace CSAc4yObjectHomeRestService.Controllers
         }
 
         [HttpPost]
-        public SetByNamesResponse PostByName(SetByNamesRequest request)
+        public SetByNamesResponse SetByNames(SetByNamesRequest request)
         {
-           
-            SetByNamesResponse response = new Ac4yObjectObjectService(_DBConn).SetByNames(request);
-            return response;
+            return new Ac4yObjectObjectService(_DBConn).SetByNames(request);
         }
+
+        [HttpPost]
+        public SetByGuidAndNamesResponse SetByGuidAndNames(SetByGuidAndNamesRequest request)
+        {
+            return new Ac4yObjectObjectService(_DBConn).SetByGuidAndNames(request);
+        }
+
+
+
     }
 }

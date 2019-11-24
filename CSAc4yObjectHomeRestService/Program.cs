@@ -22,6 +22,7 @@ namespace CSAc4yObjectHomeRestService
 
             var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new FileInfo("d:\\Server\\Visual_studio\\ac4y\\CSAc4yObjectHomeRestService\\CSAc4yObjectHomeRestService\\log4net.config"));
+
             try
             {
                 CreateWebHostBuilder(args).Build().Run();
