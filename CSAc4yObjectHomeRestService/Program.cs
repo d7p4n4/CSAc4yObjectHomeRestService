@@ -15,6 +15,7 @@ namespace CSAc4yObjectHomeRestService
 {
     public class Program
     {
+        private const int PORT = 5201;
         private static log4net.ILog _log = log4net.LogManager.GetLogger(typeof(Program));
 
         public static void Main(string[] args)
@@ -32,9 +33,10 @@ namespace CSAc4yObjectHomeRestService
                 _log.Error(exception.Message);
             }
         }
-
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://localhost:" + PORT)
+                .UseKestrel()
                 .UseStartup<Startup>();
     }
 }

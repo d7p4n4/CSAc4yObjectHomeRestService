@@ -12,13 +12,13 @@ namespace CSAc4yObjectHomeRestService.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class CSAc4yObjectRestService : ControllerBase
+    public class CSAc4yObjectHomeRestService : ControllerBase
     {
         private readonly MSSQLLogin _MSSQLLogin;
         private string _ConnectionString;
         private SqlConnection _DBConn;
 
-        public CSAc4yObjectRestService(IOptions<MSSQLLogin> msSQLLogin)
+        public CSAc4yObjectHomeRestService(IOptions<MSSQLLogin> msSQLLogin)
         {
             _MSSQLLogin = msSQLLogin.Value;
             _ConnectionString = _MSSQLLogin.connectionString;
